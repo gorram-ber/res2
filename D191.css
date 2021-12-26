@@ -1,0 +1,191 @@
+
+@media all {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        height: 100px ;
+        width: 100%;
+        background-image:linear-gradient(to right,rgb(247, 82, 6),black);
+    }
+    #logobox{
+        width: 35%;
+        height: 100%;
+        float: right;
+        background-color: black;
+    }
+    #ress{
+        float: left;
+       font-style: italic; 
+       line-height: 100px;
+       padding: 0 15px;
+    }
+    #imgres{
+        
+        height: 100%;
+        
+        border-radius: 50%;
+        border: solide black;
+    } 
+    nav {
+        width: 75%;
+        text-align: center;
+    }
+    nav a {
+        text-decoration:none;
+        color: blanchedalmond;
+        font-weight: bold;
+        font-size: 20px;
+        display: inline-block;
+    }
+    nav li {
+        display: inline-block;
+        line-height: 100px;
+        height: 100px;
+        width: 100px;
+        background-image: linear-gradient(to right,red,black);
+        text-align: center;
+    }
+    nav a:hover {
+        
+        background-color: rgb(97, 10, 238);
+        cursor: pointer;
+        height: 100% ;
+        width:100% ;
+    }
+    main{
+        width: 100%;
+        height: 450px;
+        background-image:linear-gradient(to right,rgb(247, 82, 6),black);
+        border-top: 3px solid white;
+        animation-name: changebackground ;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes changebackground {
+        0%{
+            background-image:linear-gradient(to right,rgb(6, 231, 247),black);
+    
+           }
+           50%{
+            background-image:linear-gradient(to right,rgb(6, 159, 247),black);
+    
+           }
+           75%{
+            background-image:linear-gradient(to right,rgb(6, 30, 247),black);
+    
+           }
+           100%{
+            background-image:linear-gradient(to right,rgb(110, 6, 247),black);
+    
+           }
+    }
+    aside{
+        width: 30% ;
+        height: 100% ;
+        background-color: antiquewhite;
+        border: rgb(134, 3, 3) solid;
+        float: left;
+    }
+    #h111{
+        text-align: center;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 50px;
+    }
+    #menu{
+        width: 100%;
+        height: 70%;
+        border-radius: 25px 25px 25px 25px;
+        
+        
+    }
+    #article1{
+        width: 69%;
+        height: 445px;
+        background-color:rgb(206, 91, 15);
+        float: right;
+        position: relative;
+        border: black solid;
+    }
+    #box{
+        text-align: center;
+        height: 250px;
+        width: 300px; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        background-color: coral;
+        border-radius: 25px 25px 25px 25px;
+        border: black solid;
+    }
+    #h112{
+       border-bottom: 3px solid black;
+       padding: 15px 0px;
+       font-style: italic;
+       font-size: 40px;
+    
+    }
+    #p111{
+        font-weight: bold;
+      font-size: 20px;
+      font-family: 'Oswald', sans-serif;
+      text-align: justify;
+      text-align: center;  
+    }
+    #contact-box{
+        width: 100%;
+       display: flex;
+       text-align: center;
+       transform: translate(5%,385px);
+    }
+       #contact-box img {
+     width: 45px;
+     padding: 5px;
+     }
+}
+@media only screen and (min-width :940px) and (max-width:1070px){
+    #logobox{
+        width: 35%;
+    }
+    #article{
+        width: 65%;
+    }
+    #aside{
+       width:35% ;
+    }
+
+}
+@media only screen and (max-width :940px) and (min-width : 802px) {
+           #logobox{
+            width: 40%;
+           }
+
+}
+@media only screen and (max-width :801px) {
+    header{
+        height: auto;
+    }
+    #logobox{
+        width: 100%;
+    }
+    #h1header{
+        float: none;
+    }
+    #logo{
+        float: none;
+    }
+    nav {
+        width: 100%;
+    }
+    #article{
+        height: 230px;
+        width: 100%;
+    }
+}
+
+
+
+
